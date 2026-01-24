@@ -330,11 +330,17 @@ const Gallery = () => {
           inset: 0;
           background: linear-gradient(135deg, rgba(0,0,0,0.3), rgba(0,0,0,0.85));
           z-index: 1;
+          transition: opacity 0.4s ease;
+        }
+
+        .immersive-card:hover::before {
+          opacity: 0;
         }
 
         .immersive-card:hover {
           transform: scale(1.05) rotate(2deg);
           z-index: 10;
+          box-shadow: 0 0 25px rgba(252, 178, 22, 0.4);
         }
 
         .immersive-image {
