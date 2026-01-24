@@ -9,7 +9,7 @@ const Statistics = () => {
   const statsData: Record<YearKey, any> = {
     "1.0": {
       title: "HackOverflow 1.0",
-      overview: { participants: 200, projects: 50, hours: 36, states: 10 },
+      overview: { participants: "200+", Registrations: "1000+", hours: 36, states: 10 },
       categories: [
         { name: "Web Development", value: 35 },
         { name: "AI / ML", value: 25 },
@@ -19,6 +19,7 @@ const Statistics = () => {
       ],
       achievements: [
         { icon: "🏆", label: "Winning Teams", value: "3 Teams" },
+        { icon: "👥", label: "Registrations", value: "1000+" },
         { icon: "💡", label: "Ideas Pitched", value: "50+" },
         { icon: "🎯", label: "Completion Rate", value: "92%" },
         { icon: "⭐", label: "Satisfaction", value: "4.8 / 5" },
@@ -33,7 +34,7 @@ const Statistics = () => {
 
     "2.0": {
       title: "HackOverflow 2.0",
-      overview: { participants: 200, projects: 55, hours: 36, states: 12 },
+      overview: { participants: "200+", Registrations: "1000+", hours: 36, states: 12 },
       categories: [
         { name: "Web Development", value: 30 },
         { name: "AI / ML", value: 30 },
@@ -43,6 +44,7 @@ const Statistics = () => {
       ],
       achievements: [
         { icon: "🏆", label: "Winning Teams", value: "3 Teams" },
+        { icon: "👥", label: "Registrations", value: "1000+" },
         { icon: "💡", label: "Ideas Pitched", value: "50+" },
         { icon: "🎯", label: "Completion Rate", value: "95%" },
         { icon: "⭐", label: "Satisfaction", value: "4.9 / 5" },
@@ -57,7 +59,7 @@ const Statistics = () => {
 
     "3.0": {
       title: "HackOverflow 3.0",
-      overview: { participants: 250, projects: 60, hours: 36, states: 15 },
+      overview: { participants: "250+", Registrations: "1200+", hours: 36, states: 15 },
       categories: [
         { name: "Web Development", value: 28 },
         { name: "AI / ML", value: 35 },

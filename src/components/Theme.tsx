@@ -7,9 +7,8 @@ const Themes = () => {
     days: 0,
     hours: 0,
     minutes: 0,
+    seconds: 0,
   });
-
-  const TARGET_DATE = new Date("2026-03-01T19:00:00");
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -29,12 +28,14 @@ const Themes = () => {
 
   // COUNTDOWN LOGIC
   useEffect(() => {
+    const TARGET_DATE = new Date("2026-03-01T19:00:00");
+
     const updateCountdown = () => {
       const now = new Date().getTime();
       const diff = TARGET_DATE.getTime() - now;
 
       if (diff <= 0) {
-        setTimeLeft({ days: 0, hours: 0, minutes: 0 });
+        setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
         return;
       }
 
@@ -45,12 +46,15 @@ const Themes = () => {
       const minutes = Math.floor(
         (diff % (1000 * 60 * 60)) / (1000 * 60)
       );
+      const seconds = Math.floor(
+        (diff % (1000 * 60)) / 1000
+      );
 
-      setTimeLeft({ days, hours, minutes });
+      setTimeLeft({ days, hours, minutes, seconds });
     };
 
     updateCountdown();
-    const interval = setInterval(updateCountdown, 60 * 1000);
+    const interval = setInterval(updateCountdown, 1000);
 
     return () => clearInterval(interval);
   }, []);
@@ -284,6 +288,54 @@ const Themes = () => {
           transform: rotate(12deg);
         }
 
+        .participant-note {
+          margin-top: 40px;
+          padding: 20px 30px;
+          background: rgba(252, 178, 22, 0.05);
+          border: 1px solid rgba(252, 178, 22, 0.3);
+          border-left: 4px solid #FCB216;
+          border-radius: 12px;
+          display: flex;
+          align-items: flex-start;
+          gap: 15px;
+          text-align: left;
+        }
+
+        .note-icon {
+          flex-shrink: 0;
+          width: 24px;
+          height: 24px;
+          margin-top: 2px;
+        }
+
+        .note-icon svg {
+          width: 100%;
+          height: 100%;
+          fill: #FCB216;
+        }
+
+        .note-content {
+          flex: 1;
+        }
+
+        .note-title {
+          font-family: 'Poppins', sans-serif;
+          font-size: 1rem;
+          font-weight: 700;
+          color: #FCB216;
+          margin-bottom: 8px;
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+        }
+
+        .note-text {
+          font-family: 'Poppins', sans-serif;
+          font-size: 0.95rem;
+          color: rgba(255, 255, 255, 0.8);
+          line-height: 1.6;
+          margin: 0;
+        }
+
         .decorative-dots-themes {
           position: absolute;
           width: 100%;
@@ -356,6 +408,15 @@ const Themes = () => {
           .notify-button {
             padding: 14px 30px;
             font-size: 0.95rem;
+          }
+
+          .participant-note {
+            padding: 15px 20px;
+            gap: 12px;
+          }
+
+          .note-text {
+            font-size: 0.9rem;
           }
         }
 
@@ -453,6 +514,29 @@ const Themes = () => {
                   {timeLeft.minutes}
                 </span>
                 <span className="countdown-label">Minutes</span>
+              </div>
+              <div className="countdown-item">
+                <span className="countdown-number">
+                  {timeLeft.seconds}
+                </span>
+                <span className="countdown-label">Seconds</span>
+              </div>
+            </div>
+
+            {/* 📝 PARTICIPANT NOTE */}
+            <div className="participant-note">
+              <div className="note-icon">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z" />
+                </svg>
+              </div>
+              <div className="note-content">
+                <div className="note-title">Important Note for Participants</div>
+                <p className="note-text">
+                  Participants are free to choose their own problem statements in any domain.
+                  However, after the theme is revealed, participants must align their projects
+                  with the theme by making minor modifications to ensure relevance.
+                </p>
               </div>
             </div>
           </div>

@@ -5,7 +5,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import SectionHeader from "./SectionHeader";
 
-/* ---------------- TYPES ---------------- */
 interface SponsorItem {
   id: number;
   name?: string;
@@ -15,12 +14,10 @@ interface SponsorItem {
   SubSponsorcategory?: string;
 }
 
-/* ---------------- COMPONENT ---------------- */
 const SponsorUs: React.FC = () => {
   const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
   const [hoveredBenefit, setHoveredBenefit] = useState<number | null>(null);
 
-  /* ---------------- DATA ---------------- */
   const ourSponsors: SponsorItem[] = [
     { id: 1, name: "Blue Star", image: "/images/Sponsors/Blue Star tab.png", link: "#", effect: "fade-up", SubSponsorcategory: "Co-Powered By" },
     { id: 2, name: "Devfolio", image: "/images/Sponsors/devfolioWhite.png", link: "#", effect: "fade-up", SubSponsorcategory: "Gold Sponsor" },
@@ -60,7 +57,6 @@ const SponsorUs: React.FC = () => {
     { id: 6, icon: "📊", title: "Thought Leadership", desc: "Position your brand as a tech leader.", color: "#E85D24" }
   ];
 
-  /* ---------------- EFFECTS ---------------- */
   useEffect(() => {
     AOS.init({ duration: 900 });
     const move = (e: MouseEvent) => setCursorPos({ x: e.clientX, y: e.clientY });
@@ -289,7 +285,7 @@ const SponsorUs: React.FC = () => {
           <a className="cta-btn cta-primary" href="/docs/SponsorBrochure.pdf" download>
             Download Brochure
           </a>
-          <a className="cta-btn cta-secondary" href="mailto:admin@hackoverflow4.tech">
+          <a className="cta-btn cta-secondary" href="mailto:hackoverflow@mes.ac.in">
             Email Us
           </a>
         </div>

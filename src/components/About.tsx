@@ -452,7 +452,7 @@ const About = () => {
 
               <div className="maps-button-wrapper">
                 <a
-                  href="https://goo.gl/maps/1Q1Q1Q1Q1Q1Q1Q1Q1"
+                  href="https://maps.app.goo.gl/ZM6jyMdmwdNiZHxM9"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="map-link"

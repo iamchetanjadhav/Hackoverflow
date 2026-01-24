@@ -229,7 +229,13 @@ const Navbar = () => {
             ))}
           </ul>
 
-          <a className="brochure" href="/docs/PublicityBrochure.pdf" download>
+          <a
+            className="brochure"
+            href="/Docs/PublicityBrochure.pdf"
+            download="HackOverflow Brochure.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Brochure
           </a>
 

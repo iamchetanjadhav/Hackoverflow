@@ -17,61 +17,47 @@ import Hero from "@/components/Hero";
 export default function Home() {
   return (
     <>
-      {/* HERO */}
       <section id="hero">
         <Hero />
       </section>
 
-      {/* SPECIAL */}
       <Special />
 
-      {/* OVERVIEW */}
       <Overview />
 
-      {/* GALLERY */}
       <section id="gallery">
         <Gallery />
       </section>
 
-      {/* STATISTICS */}
       <section id="stats">
         <Statistics />
       </section>
 
-      {/* SCHEDULE */}
       <section id="schedule">
         <Schedule />
       </section>
 
-      {/* KEY DATES */}
       <KeyDates />
 
-      {/* THEMES */}
-      <section id="themes">
+      <section id="theme">
         <Theme />
       </section>
 
-      {/* SPONSORS */}
       <section id="sponsors">
         <Sponsor />
       </section>
 
-      {/* TEAMS */}
       <section id="teams">
         <Teams />
       </section>
 
-      {/* FAQ */}
       <section id="faq">
         <FAQ />
       </section>
-
-      {/* ABOUT */}
       <section id="about">
         <About />
       </section>
 
-      {/* FOOTER */}
       <Footer />
     </>
   );
