@@ -322,13 +322,17 @@ This project is proprietary and confidential. Unauthorized copying, distribution
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **Next.js Team** – For the incredible React framework
 - **Tailwind Labs** – For the utility-first CSS framework
 - **Framer** – For the animation library
 - **PHCET** – For hosting and organizing HackOverflow 4.0
+- **Parth Bhoir** – System engineering and server configuration (hosted on home server)
+- **Nirav Thakur** – Design and frontend UI development
 - **All Contributors** – For their time and expertise
+
+
 
 ---
 
