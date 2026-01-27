@@ -9,7 +9,7 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.0+-38bdf8?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
 [![License](https://img.shields.io/badge/License-All_Rights_Reserved-red?style=for-the-badge)](LICENSE)
 
-[Live Demo](#) • [Features](#-features) • [Installation](#-installation) • [Documentation](#-documentation)
+**🌐 [Visit Live Website](https://hackoverflow4.tech/)** • [Features](#-features) • [Installation](#-installation) • [Documentation](#-documentation)
 
 </div>
 
@@ -17,7 +17,11 @@
 
 ## 📖 About
 
-**HackOverflow 4.0** is a national-level hackathon organized by **PHCET**. This repository contains the official event website built with cutting-edge web technologies, featuring:
+**HackOverflow 4.0** is a national-level hackathon organized by **PHCET**. This repository contains the official event website built with cutting-edge web technologies.
+
+🌐 **Live Site:** [https://hackoverflow4.tech/](https://hackoverflow4.tech/)
+
+### Highlights:
 
 - 🎨 Stunning gradient backgrounds and glow effects
 - ⚡ Buttery-smooth animations powered by Framer Motion
@@ -302,7 +306,7 @@ We welcome contributions! To contribute:
 **HackOverflow 4.0 Organizing Team**
 
 📧 Email: [admin@hackoverflow.tech](mailto:admin@hackoverflow.tech)  
-🌐 Website: [hackoverflow.tech](#)  
+🌐 Website: [https://hackoverflow4.tech/](https://hackoverflow4.tech/)  
 🐦 Twitter: [@HackOverflow](#)  
 📷 Instagram: [@hackoverflow](#)  
 
@@ -330,7 +334,7 @@ This project is proprietary and confidential. Unauthorized copying, distribution
 
 <div align="center">
 
-### Built by the HackOverflow Team 
+### Built with ❤️ by the HackOverflow Team
 
 **[⬆ Back to Top](#-hackoverflow-40--official-website)**
 
