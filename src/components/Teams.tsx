@@ -94,26 +94,7 @@ export default function Team() {
         github: "https://github.com/Parthb56"
       },
     },
-        {
-      name: "Saksham Tiwari",
-      role: "Outreach Head",
-      image: "/images/Team/Saksham Tiwari.jpeg",
-      bio: "Doing Outreah and PR for the event",
-      socials: {
-        linkedin: "https://in.linkedin.com/in/saksham-tiwari-781727289",
-        github: "https://github.com/sakshamtiwari2004"
-      },
-    },
-     {
-      name: "Advait Patil",
-      role: "Motion Graphics Head",
-      image: "/images/Team/Advait Patil.jpeg",
-      bio: "Creating engaging motion graphics and visual content",
-      socials: {
-        linkedin: "https://in.linkedin.com/in/advait-patil-781727289",
-        github: "https://github.com/AdvaitPatil"
-      },
-    },
+      
     {
       name: "Chetan Jadhav",
       role: "Technical Head",
@@ -219,6 +200,26 @@ export default function Team() {
       socials: {
         linkedin: "http://linkedin.com/in/aayushgunjal",
         github: "http://github.com/AayushGunjal"
+      },
+    },
+     {
+      name: "Saksham Tiwari",
+      role: "Outreach Head",
+      image: "/images/Team/Saksham Tiwari.jpeg",
+      bio: "Doing Outreah and PR for the event",
+      socials: {
+        linkedin: "https://www.linkedin.com/in/saksham-tiwari1512",
+        github: "https://github.com/Saksham-Tiwar"
+      },
+    },
+     {
+      name: "Advait Patil",
+      role: "Motion Graphics Head",
+      image: "/images/Team/Advait Patil.jpeg",
+      bio: "Creating engaging motion graphics and visual content",
+      socials: {
+        linkedin: "https://www.linkedin.com/in/advait-patil-236aa82b5",
+        github: "https://github.com/ady6615"
       },
     },
   ];
